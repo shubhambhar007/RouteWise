@@ -1,0 +1,50 @@
+[versions]
+agp = "8.9.2"
+kotlin = "2.1.20"
+ksp = "2.1.20-1.0.32"
+compose = "2025.04.01"
+room = "2.7.1"
+lifecycle = "2.9.0"
+hilt = "2.56.2"
+navigation-sdk = "6.3.3"
+
+[libraries]
+androidx-core = { module = "androidx.core:core-ktx", version = "1.16.0" }
+androidx-activity = { module = "androidx.activity:activity-compose", version = "1.10.1" }
+androidx-fragment = { module = "androidx.fragment:fragment-ktx", version = "1.8.6" }
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-material = { module = "androidx.compose.material3:material3" }
+compose-icons = { module = "androidx.compose.material:material-icons-extended" }
+compose-test = { module = "androidx.compose.ui:ui-test-junit4" }
+compose-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room-testing = { module = "androidx.room:room-testing", version.ref = "room" }
+serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.8.1" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+junit = { module = "junit:junit", version = "4.13.2" }
+androidx-test-runner = { module = "androidx.test:runner", version = "1.6.2" }
+androidx-test-junit = { module = "androidx.test.ext:junit", version = "1.2.1" }
+coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version = "1.10.2" }
+navigation = { module = "androidx.navigation:navigation-compose", version = "2.9.0" }
+reorderable = { module = "sh.calvin.reorderable:reorderable", version = "2.4.3" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version = "4.12.0" }
+mockwebserver = { module = "com.squareup.okhttp3:mockwebserver", version = "4.12.0" }
+maplibre = { module = "org.maplibre.gl:android-sdk", version = "11.8.2" }
+turf = { module = "org.maplibre.gl:android-sdk-turf", version = "6.0.1" }
+google-navigation = { module = "com.google.android.libraries.navigation:navigation", version.ref = "navigation-sdk" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
